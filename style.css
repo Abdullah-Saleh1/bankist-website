@@ -77,7 +77,11 @@ body {
   background-color: #f3f3f3;
   text-rendering: optimizeSpeed;
   transition: var(--transition-duration);
-  overflow: hidden auto;
+}
+
+.page {
+  overflow-x: hidden; 
+  min-height: 100vh; 
 }
 
 i {
