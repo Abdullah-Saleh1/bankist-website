@@ -298,8 +298,8 @@ document.addEventListener('keydown', function(e) {
 
 // Slider On Mobile 
 sliderContainer.addEventListener('scroll', function() {
-  const slideWidth = slides[0].clientWidth; 
-  const scrollX = this.scrollLeft; 
+  const slideWidth = Math.trunc(slides[0].clientWidth); 
+  const scrollX = Math.trunc(this.scrollLeft); 
   if (scrollX === 0) curSlide = 0; 
   if (slideWidth === scrollX || slideWidth + 1 === scrollX || slideWidth - 1 === scrollX) curSlide = 1; 
   if (slideWidth * 2 - 1 <= scrollX) curSlide = 2; 
@@ -310,3 +310,6 @@ sliderContainer.addEventListener('scroll', function() {
 goUpBtn.addEventListener('click', function() {
   header.scrollIntoView({behavior: 'smooth'})
 })
+
+
+

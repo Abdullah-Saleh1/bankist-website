@@ -70,6 +70,7 @@ html {
 }
 
 body {
+  overflow: hidden auto; 
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
   color: var(--clr-body-text);
@@ -80,7 +81,7 @@ body {
 }
 
 .page {
-  overflow-x: hidden; 
+  overflow: hidden; 
   min-height: 100vh; 
 }
 
@@ -683,7 +684,7 @@ h4 {
 
 .dots {
   position: absolute;
-  bottom: 5%;
+  bottom: 4%;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
